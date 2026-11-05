@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="校园长笛社 2026 年春季招新。了解长笛入门、合奏排练、学期活动和报名方式。">
+  <title>长笛社｜把喜欢，吹成风</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23142b22'/%3E%3Cpath d='M5 23C11 22 14 19 18 11M6 27C14 26 20 20 23 12M10 28C20 27 25 21 27 15' fill='none' stroke='%23edb65b' stroke-width='1.25' stroke-linecap='round'/%3E%3Ccircle cx='22' cy='7.5' r='2' fill='%23edb65b'/%3E%3C/svg%3E">
+  <style>
+:root {
+  color-scheme: light;
+  --pine: #142b22;
+  --deep: #102219;
+  --leaf: #324c38;
+  --gold: #edb65b;
+  --ochre: #7d511c;
+  --paper: #f8f5ed;
+  --cream: #eee8db;
+  --ink: #232c23;
+  --muted: #545f52;
+  --rule: #dcd5c7;
+  --serif: Georgia, "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --sans: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.75 var(--sans); }
+h1, h2, h3, p, figure { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+button, summary { cursor: pointer; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid #ae6929; outline-offset: 4px; }
+img, video, embed { display: block; max-width: 100%; }
+::selection { background: var(--gold); color: var(--deep); }
+.wrap { width: min(1224px, calc(100% - 112px)); margin-inline: auto; }
+.skip { position: fixed; z-index: 20; top: 8px; left: 8px; transform: translateY(-200%); padding: 10px 18px; background: white; }
+.skip:focus { transform: none; }
+.mono, .eyebrow, .index { font: 600 11px/1.4 var(--mono); letter-spacing: .17em; text-transform: uppercase; }
+header { background: var(--deep); color: #f9f4e9; }
+.bar { min-height: 83px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.brand { display: inline-flex; align-items: center; gap: 13px; flex: 0 0 auto; }
+.mark { width: 42px; height: 42px; display: grid; place-items: center; color: var(--gold); border: 1px solid #aa915e; border-radius: 50%; }
+.mark svg { width: 27px; height: 27px; }
+.brand strong { display: block; font: 700 20px/1.2 var(--serif); letter-spacing: .13em; }
+.brand small { display: block; margin-top: 6px; color: #c6d1bd; font: 10px/1.1 var(--mono); letter-spacing: .14em; }
+nav { display: flex; gap: clamp(14px, 3vw, 42px); align-items: center; }
+nav a { font-size: 13px; padding-block: 8px; white-space: nowrap; color: #e5e8d8; transition: color .2s; }
+nav a:hover { color: var(--gold); }
+nav .nav-join { padding: 8px 15px; border: 1px solid #9b8e62; border-radius: 4px; color: #f4d093; }
+.hero { position: relative; isolation: isolate; overflow: hidden; min-height: clamp(590px, 49vw, 740px); background: #1d3629; color: #fff9ee; display: grid; align-items: center; }
+.hero-photo, .hero::after { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+.hero-photo { object-fit: cover; object-position: center 50%; }
+.hero::after { content: ""; z-index: -1; background: linear-gradient(90deg, #101f17 1%, #14281def 24%, #13251ca6 43%, #14251b24 72%), linear-gradient(0deg, #102219c9, transparent 23%); }
+.hero-wrap { padding-block: 116px 106px; }
+.hero-content { max-width: 580px; }
+.kicker { display: flex; align-items: center; gap: 12px; font-size: 13px; letter-spacing: .16em; color: #f6d297; }
+.kicker::before { content: ""; display: block; width: 28px; height: 1px; background: currentColor; }
+.hero h1 { margin-block: 23px 23px; font: 700 clamp(55px, 6.5vw, 102px)/1.12 var(--serif); letter-spacing: -.07em; }
+.hero h1 span { display: block; color: #f2c67f; }
+.hero-description { max-width: 380px; color: #edf0e6; font-size: 16px; line-height: 1.95; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.btn { display: inline-flex; justify-content: center; align-items: center; gap: 15px; min-height: 47px; padding: 10px 19px; border: 1px solid transparent; border-radius: 4px; font-size: 14px; font-weight: 700; transition: background .2s, color .2s, border-color .2s; }
+.btn-gold { color: var(--deep); background: var(--gold); }
+.btn-gold:hover { background: #f9d495; }
+.btn-ghost { border-color: #ffffff52; color: #fff9ee; background: #16271f50; }
+.btn-ghost:hover { background: #16271fc0; border-color: #ffffff97; }
+.btn-dark { background: var(--pine); color: #fff9ee; }
+.btn-dark:hover { background: #335240; }
+.btn-light { background: transparent; border-color: #a99e8a; color: var(--pine); }
+.btn-light:hover { background: #e5dfd0; }
+.music { position: absolute; top: 27px; left: max(56px, (100% - 1224px) / 2); min-height: 40px; border: 1px solid #ffffff42; color: #fff8e5; border-radius: 30px; background: #13241d86; display: inline-flex; align-items: center; gap: 10px; padding: 6px 12px 6px 8px; font-size: 12px; }
+.music:hover { border-color: #f2c67f; }
+.music-icon { display: grid; place-items: center; width: 26px; height: 26px; background: #eab967; color: var(--deep); border-radius: 50%; font-size: 12px; }
+.hero-meta { position: absolute; bottom: 25px; left: 0; right: 0; display: flex; justify-content: space-between; color: #e6e1ca; border-top: 1px solid #fff7df49; padding-top: 13px; }
+.strip { background: #e8bc72; color: #263125; }
+.strip .wrap { min-height: 53px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.strip .mono { font-size: 10px; }
+.strip .strip-text { font: 700 14px/1.4 var(--serif); letter-spacing: .1em; }
+.section { padding-block: 88px; scroll-margin-top: 18px; }
+.section.alt { background: var(--cream); }
+.section-title { margin-block: 9px 17px; font: 700 clamp(39px, 5vw, 62px)/1.18 var(--serif); letter-spacing: -.065em; }
+.eyebrow { color: var(--ochre); }
+.lead { max-width: 650px; color: var(--muted); line-height: 1.9; }
+.section-end { margin-top: 26px; }
+.toplink { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; color: var(--leaf); }
+.toplink:hover { text-decoration: underline; }
+.two-col { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .8fr); gap: clamp(32px, 7vw, 104px); align-items: start; }
+.note { position: relative; isolation: isolate; overflow: hidden; background: var(--pine); color: #fff5e4; padding: 36px; min-height: 245px; display: flex; flex-direction: column; justify-content: space-between; gap: 30px; }
+.note::after { content: ""; position: absolute; z-index: -1; width: 440px; height: 220px; right: -210px; bottom: -73px; border: 1px solid #e8bd7036; border-radius: 50%; box-shadow: 0 0 0 16px #e8bd7010, 0 0 0 32px #e8bd7010, 0 0 0 48px #e8bd7010, 0 0 0 64px #e8bd7010; transform: rotate(-30deg); }
+.note .mono { color: #f0c37c; }
+.note strong { font: 700 clamp(27px, 3vw, 40px)/1.4 var(--serif); letter-spacing: -.03em; }
+.note small { color: #e2e2ce; }
+details.read { max-width: 850px; margin-top: 25px; }
+details.read summary { list-style: none; width: fit-content; min-height: 40px; display: flex; align-items: center; gap: 13px; color: var(--leaf); border-bottom: 1px solid #919c89; font-size: 14px; font-weight: 700; }
+details.read summary::-webkit-details-marker { display: none; }
+details.read summary::after { content: "+"; font: 22px var(--mono); }
+details.read[open] summary::after { content: "−"; }
+.article { margin-top: 18px; color: var(--muted); max-width: 760px; }
+.article p + p { margin-top: 13px; }
+.scrollbox { overflow-x: auto; margin-top: 32px; }
+.schedule { border-collapse: collapse; width: 100%; min-width: 590px; background: var(--paper); font-size: 14px; }
+.schedule th, .schedule td { border: 1px solid var(--rule); padding: 13px 17px; }
+.schedule thead tr:first-child th { background: var(--pine); color: #fcf3df; font: 700 19px/1.4 var(--serif); padding-block: 17px; }
+.schedule thead tr:nth-child(2) th { text-align: center; background: #e5decf; }
+.schedule td:nth-child(1), .schedule td:nth-child(2) { white-space: nowrap; }
+.schedule td[rowspan] { background: #f2e9d8; vertical-align: middle; }
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-top: 32px; }
+.media { background: var(--pine); color: #fbf1df; }
+.media-view { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--deep); }
+.photo-link { position: relative; display: block; overflow: hidden; }
+.photo-link img { transition: transform .45s; }
+.photo-link:hover img { transform: scale(1.035); }
+.photo-link b { position: absolute; bottom: 12px; right: 12px; color: var(--deep); background: var(--gold); width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; }
+.media figcaption { display: flex; justify-content: space-between; align-items: center; gap: 9px; padding: 15px 17px; font-size: 13px; }
+.media figcaption span { color: #e8c381; }
+.media figcaption a { text-decoration: underline; text-underline-offset: 3px; }
+.story { color: #fff7e9; background: var(--pine); }
+.story .eyebrow, .story .toplink, .story details.read summary { color: #f2c67f; }
+.story .lead, .story .article { color: #e1e4d7; }
+.story-grid { display: grid; grid-template-columns: 1.55fr 1fr; align-items: center; gap: 46px; }
+.story-quote { color: #f5cc8b; border-left: 1px solid #c39655; padding-left: 24px; font: 700 clamp(22px, 3vw, 39px)/1.55 var(--serif); }
+.story-quote small { display: block; margin-top: 13px; color: #dbe4d3; font: 13px/1.5 var(--sans); }
+.apply-layout { display: grid; grid-template-columns: minmax(190px, 1fr) minmax(0, 2fr); gap: 42px; align-items: start; }
+.form-box { padding: 24px 27px; border: 1px solid var(--rule); background: #fffdf7; }
+.form-box fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.form-box p { font-size: 13px; color: var(--muted); }
+.form-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px; }
+.form-table th, .form-table td { border-bottom: 1px solid #e5e0d4; text-align: left; padding: 12px 6px; vertical-align: top; }
+.form-table th { width: 28%; padding-top: 17px; font-weight: 600; }
+.form-table tr:last-child td { border: none; padding-bottom: 0; }
+.form-table :is(input[type=text], select, textarea) { width: 100%; min-height: 39px; padding: 7px 9px; border: 1px solid #b6b9a9; border-radius: 3px; background: #fffefa; color: var(--ink); }
+.form-table textarea { resize: vertical; }
+.form-table :is(input[type=radio], input[type=checkbox]) { accent-color: var(--pine); width: 16px; height: 16px; margin: 0; }
+.fields { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+.fields label { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; }
+.form-table .date input { width: 3.1em; }
+.form-table .date label:first-child input { width: 4.3em; }
+.contacts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+#form-status:not(:empty) { margin-top: 15px; border-left: 3px solid var(--ochre); padding-left: 10px; }
+.footer { background: var(--deep); color: #f7f2e7; padding-block: 32px; }
+.footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+.footer .mono { color: #d3bf94; }
+.footer .toplink { color: #f3ce91; }
+.intro-banner { color: #fff9ee; background: var(--pine); padding-block: 72px; }
+.intro-banner .eyebrow, .intro-banner .lead { color: #f2cb8a; }
+.intro-banner h1 { font: 700 clamp(47px, 7vw, 88px)/1.16 var(--serif); margin-block: 10px 17px; }
+.intro-page { display: grid; grid-template-columns: 1.3fr 1fr; align-items: start; gap: 42px; }
+.intro-page h2 { margin-bottom: 12px; font: 700 29px/1.3 var(--serif); }
+.intro-page p { color: var(--muted); margin-bottom: 14px; }
+.intro-page .btn { margin-top: 13px; }
+@media (max-width: 850px) {
+  .wrap { width: calc(100% - 56px); }
+  .bar { min-height: 76px; gap: 12px; }
+  nav { gap: 13px; }
+  .music { left: 28px; }
+  .section { padding-block: 60px; }
+  .apply-layout { grid-template-columns: 1fr; gap: 23px; }
+}
+@media (max-width: 620px) {
+  .wrap { width: calc(100% - 36px); }
+  .bar { padding-block: 14px 9px; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .mark { width: 36px; height: 36px; }
+  .brand strong { font-size: 18px; }
+  nav { gap: 9px 12px; flex-wrap: wrap; }
+  nav a { font-size: 12px; }
+  nav .nav-join { padding: 5px 8px; }
+  .hero { min-height: 615px; align-items: end; }
+  .hero-photo { object-position: 64% center; }
+  .hero::after { background: linear-gradient(0deg, #102219 1%, #13251df5 28%, #13251d69 69%, #13251d28), linear-gradient(90deg, #13251d50, transparent); }
+  .hero-wrap { padding-block: 130px 74px; }
+  .hero h1 { margin-block: 15px; font-size: clamp(48px, 11.5vw, 70px); }
+  .hero-description { font-size: 14px; }
+  .hero-actions { margin-top: 19px; }
+  .music { left: 18px; top: 17px; }
+  .hero-meta { bottom: 16px; font-size: 9px; }
+  .strip .mono { display: none; }
+  .section { padding-block: 51px; }
+  .two-col, .story-grid, .gallery, .intro-page { grid-template-columns: 1fr; gap: 20px; }
+  .note { min-height: 190px; padding: 24px; }
+  .form-box { padding: 14px; }
+  .form-table th { width: 30%; }
+  .form-table th, .form-table td { padding-inline: 3px; }
+  .form-table .date { gap: 7px; }
+  .form-table .date input { width: 2.6em; }
+  .form-table .date label:first-child input { width: 3.9em; }
+  .contacts { grid-template-columns: 1fr; }
+  .footer .wrap { flex-wrap: wrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header id="top">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="长笛社招新主页">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M5 23C11 22 14 19 18 11M6 27C14 26 20 20 23 12M10 28C20 27 25 21 27 15" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+            <circle cx="22" cy="7.5" r="2" fill="currentColor"/>
+          </svg>
+        </span>
+        <span><strong>长笛社</strong><small>CAMPUS FLUTE CLUB</small></span>
+      </a>
+      <nav aria-label="招新导航">
+        <a href="#about">社团简介</a>
+        <a href="#schedule">活动安排</a>
+        <a href="#gallery">风采展示</a>
+        <a href="#story">社员故事</a>
+        <a class="nav-join" href="#apply">在线报名 ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="headline">
+      <img class="hero-photo" src="club.jpg" alt="" width="1600" height="900" fetchpriority="high">
+      <button class="music" id="music-toggle" type="button" aria-pressed="false" hidden>
+        <span class="music-icon" id="music-icon" aria-hidden="true">▶</span><span id="music-label">播放主题曲</span>
+      </button>
+      <audio id="theme-music" src="music.mp3" preload="none" loop aria-label="长笛社主题曲《课后微风》"></audio>
+      <noscript><audio class="music" src="music.mp3" controls loop aria-label="长笛社主题曲"></audio></noscript>
+      <div class="wrap hero-wrap">
+        <div class="hero-content">
+          <p class="kicker">长笛社 · 2026 春季招新</p>
+          <h1 id="headline">把喜欢，<span>吹成风。</span></h1>
+          <p class="hero-description">从吹出第一声，到和伙伴吹完一首曲子。下课后，来排练室一起试试长笛吧。</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#apply">报名加入 <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#about">认识长笛社 <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="wrap hero-meta mono" aria-hidden="true"><span>VOL. 01 / 春季合奏</span><span>FLUTE CLUB · 2026</span></div>
+    </section>
+    <div class="strip">
+      <div class="wrap">
+        <span class="mono">SPRING 2026 / OPEN CALL</span>
+        <span class="strip-text">欢迎零基础同学 <span aria-hidden="true">✦</span> 先听一场排练，再决定要不要加入</span>
+      </div>
+    </div>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="two-col">
+          <div>
+            <p class="eyebrow">01 / About the Club</p>
+            <h2 class="section-title" id="about-title">社团简介</h2>
+            <p class="lead">我们是校园里一群喜欢长笛的同学。有人从未学过乐器，也有人想重新捡起练了多年的长笛。入门课从笛头和呼吸开始，合奏课会带你听见不同声部怎样接住彼此的旋律。</p>
+            <details class="read">
+              <summary>了解入门和合奏</summary>
+              <div class="article">
+              <p>在长笛社，学一件乐器这件事从每周能留下的一小段时间开始。周末有空的时候，我们把排练室的桌椅往两边挪，架好谱架，先听一段合奏，再各自找地方练习。有人下课后抱着课本过来，有人把小时候学过的长笛从家里带来，也有人连长笛该朝哪边拿都还不知道。大家在同一间教室找到适合自己的练习，结束前再一起吹几小节。</p>
+              <p>长笛最有意思的地方，可能是它的第一个音。嘴唇离吹口很近，吹出来的气需要轻轻掠过边缘，声音才会出现。刚开始，有同学以为得再用力一点，反而越吹越紧张。我们把笛头单独拿下来，先试气息的方向，再听音色有没有变化。第一次试到清楚的音，通常只是一瞬间。只要记住刚才嘴唇和下巴的位置，下一次就更容易找回那个声音。</p>
+              <p>入门小组会把练习拆开。学过吹笛头后，再试装笛、持笛和几个容易按出的音。社员会站在旁边帮忙看肩膀是否抬起、手指有没有按实，谱架也会调整到能抬头看的高度。每次留下一两件能回去自己练的事情，比如找一个舒服的换气位置，或者对着节拍器吹完四拍长音。进度不同很常见，下周可以从上次停的地方接着来。</p>
+              <p>有基础的同学可以加入声部练习。一个简单的重奏通常有一条明显的旋律和几条不容易被听出来的线。轮到自己伴奏时，首先要知道在哪一拍进来，再听见旋律怎样越过自己的声音。我们会让大家互换声部，试试熟悉的乐句到了别人手里是什么样子。很多合奏上的难题，换到另一张椅子上听一次就有了新的解法。</p>
+              <p>选曲时，我们把乐句能否分开练、换气是否够用和现有的排练时间一起考虑。社员可以带一段喜欢的旋律来，先找两个人试吹，再决定是否改成适合大家的重奏。有些曲子保留原本的速度，有些会慢一点，也会把难指法换到另一个声部。排练的目标是让每个人都知道自己在哪一拍接进来，以及身边的伙伴正在吹什么。</p>
+              <p>排练室里很容易听到一段音乐只吹了一半。有人伸手去翻谱，有人在长音末尾没留够气，还有人听着听着忘了数休止。我们会停下来标记问题，选离出错处最近的小节重来。复盘时可以讲具体一点，比如“我没听见上一拍的收音”，同伴就知道该从哪里示范。愿意讲出自己的困难，也是给整组节省时间。</p>
+              <p>除了吹奏，布置场地、给谱架编号、整理练习谱都是社员一起完成的事。对声音记录有兴趣的同学，可以帮忙记下试奏时各组的位置和音量，或者在得到同意后记录短片。擅长沟通的同学也可以协助迎新，带第一次来的人找到教室。熟悉这些事情之后，原本不爱说话的新同学往往也能很自然地和身边人聊上几句。</p>
+              <p>我们希望把学期末的校园分享会做成一次让同学坐下来听的演出。可以只参加平时练习，也可以和小组一起把准备好的曲子带上台。上场前要走一遍进场、摆谱和抬手的流程，散场后再一起收拾。等到下一学期招新时，大家能把自己曾经用过的练习方法交给新同学。社团就这样慢慢记住每一届留下的声音。</p>
+              <p>第一次来，先听听附近的人怎么吹，然后决定自己想尝试哪一步。可以先把一支笛头拿在手里，也可以带着正在练的谱子问一个具体问题。要是还在犹豫自己喜不喜欢长笛，欢迎在排练室坐一会儿。听过真实的合奏，再做决定，会比在屏幕上看多少介绍都直接。</p>
+            </div>
+            </details>
+          </div>
+          <aside class="note" aria-label="长笛社欢迎语">
+            <span class="mono">A NOTE FOR NEW PLAYERS</span>
+            <strong>从一口气开始，<br>从一个音认识彼此。</strong>
+            <small>给第一次走进排练室的你</small>
+          </aside>
+        </div>
+        <p class="section-end"><a class="toplink" href="#top">返回顶部 ↑</a></p>
+      </div>
+    </section>
+
+    <section class="section alt" id="schedule" aria-labelledby="schedule-title">
+      <div class="wrap">
+        <p class="eyebrow">02 / Spring Programme</p>
+        <h2 class="section-title" id="schedule-title">活动安排</h2>
+        <p class="lead">学期初有见面会和基础公开课。接下来，我们会分声部练习，准备一场轻松的校园分享演出。</p>
+        <div class="scrollbox" role="region" aria-label="活动表，可横向滚动" tabindex="0">
+          <table class="schedule" aria-label="长笛社 2026 年春季学期活动安排表">
+            <thead>
+              <tr><th colspan="4">长笛社 2026 年春季学期活动安排表</th></tr>
+              <tr><th scope="col">活动名称</th><th scope="col">时间</th><th scope="col">地点</th><th scope="col">内容</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>新成员见面会</td><td>3 月 14 日 15:00</td><td rowspan="2">艺术楼 203 教室</td><td>认识社员，听一段长笛合奏</td></tr>
+              <tr><td>长笛基础教学公开课</td><td>3 月 21 日 15:00</td><td>体验吹笛头、持笛和基础指法</td></tr>
+              <tr><td>春日分声部排练</td><td>4 月 11 日 15:00</td><td>艺术楼 205 排练室</td><td>分组练习，完成第一次合排</td></tr>
+              <tr><td>校园午后音乐会</td><td>5 月 16 日 16:00</td><td>学生活动中心小剧场</td><td>演奏本学期练习的长笛小品</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <details class="read">
+          <summary>查看活动流程和准备事项</summary>
+          <div class="article">
+              <p>春季活动从认识社员开始，接着安排一次基础公开课，再进入分组练习和分享演出。表格里列的是四个适合集中参加的节点，每次活动之间也可以按小组约时间复习。第一次看到表格时，可以先挑自己感兴趣的一项，查清地点和时间，再想想要不要准备谱子或问题。遇到课程冲突，提前和同组同学说明，后续可以从练习记录接上。</p>
+              <p>新成员见面会安排在艺术楼二楼。进教室后先找个位置坐下，留意哪里是吹奏区，哪里可以放包和外套。开场会有一小段重奏，听完后可以把自己注意到的声音说出来，比如旋律从谁那里转给谁，或者哪几个人一起停了下来。社员随后会介绍活动节奏，让有经验和刚入门的同学各自聊一聊想学的内容。</p>
+              <p>见面会后半段留给问题。常见问题包括是否需要自己准备长笛、零基础如何开始、活动时间和上课冲突怎么办。有关乐器的安排要根据当次体验情况确认，可以先了解笛头试吹的流程。如果带来自己的长笛，可以请有经验的同学看看组装和收纳的方法。场地留有旁听位置，想先观察的同学坐在这里也能看清楚。</p>
+              <p>第二次活动仍在艺术楼二楼同一间教室。基础教学公开课从观察气流开始，带练同学会先示范，大家再轮流试。教室安静时更容易分辨气声与笛音，等候的同学可以看持笛角度，或者跟着练习图做手指动作。试吹前后按现场安排清洁器材。每个人找到声音的时间不同，遇到困难可以举手请社员过来看一下。</p>
+              <p>公开课接下来的练习是把单个音放进节拍里。先数四拍，再吹两拍，余下两拍留给吸气和整理手指。已经会吹几个音的同学可以试着跟住节拍器吹一小句，新同学也可以只做其中一个音。结束前大家可以记下本周的练习目标，比如让第一个音每次都在第一拍进入，或者把换指和换气分开练清楚。</p>
+              <p>四月的排练会将不同声部安排在各自的角落。各组拿到谱子先看标记，从最容易对齐的段落开始，确认节拍和换气，再找最难接上的两三小节。合排时尽量保持一样的速度，遇到错误先记下小节号，等一段结束再回头处理。这样可以观察错误出在哪里，也能给伴奏声部更多机会把自己的线条吹完整。</p>
+              <p>合排结束前通常会做一次短复盘。每组可以留下一段本次成功的地方和一个还要练的细节，比如“第二声部第四拍的音已经接稳，但结尾的长音需要一起收”。下次来时只要从这些标记开始，就不用把整首曲子又从头吹一遍。如果临时请假，可以问同组伙伴这次确定了哪些速度、换气和进入位置。</p>
+              <p>五月的校园午后音乐会包括一段试音时间。社员在台下标好座位和谱架高度，给观众留出方便进出的走道。演出前先对着空场吹一小句，检查台上听到的音量和排练室有什么不同。演出当天请预留入场和准备的时间。愿意参加场务的同学可以在台侧帮忙引导，旁听的同学也欢迎带着自己的问题来。</p>
+              <p>活动之间也适合自己做几分钟练习。可以先复习上次留下的一小节，录一段只给自己听的声音，留意换气前后的节拍是否一样。去教室前，把乐器、谱子和清洁用品放进包里，把想问的问题写在谱页边上。准备越具体，见到带练同学时就越容易把短短一段时间花在真正卡住的地方。</p>
+            </div>
+        </details>
+        <p class="section-end"><a class="toplink" href="#top">返回顶部 ↑</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <p class="eyebrow">03 / In Rehearsal</p>
+        <h2 class="section-title" id="gallery-title">风采展示</h2>
+        <p class="lead">排练时，我们先听彼此的气息和节拍，再试着把几个声部拼在一起。点击照片，可以看看一场开放排练是怎样进行的。</p>
+        <div class="gallery">
+          <figure class="media">
+            <a class="photo-link" href="club_intro.html" aria-label="查看午后合奏活动介绍">
+              <img class="media-view" src="club.jpg" alt="三位校园长笛社成员在夕阳照进的排练室合奏" width="1600" height="900" loading="lazy">
+              <b aria-hidden="true">↗</b>
+            </a>
+            <figcaption><strong>午后合奏 · 排练室</strong><span>点击图片查看活动</span></figcaption>
+          </figure>
+          <figure class="media">
+            <embed class="media-view" src="club-video.mp4" type="video/mp4" title="长笛社排练短片" width="640" height="360">
+            <figcaption><strong>排练室的 5 秒</strong><a href="club-video.mp4">打开短片 ↗</a></figcaption>
+          </figure>
+        </div>
+        <details class="read">
+          <summary>阅读排练手记</summary>
+          <div class="article">
+              <p>照片里的排练室有一扇朝西的窗。太阳快落下来的时候，银色笛管会亮起一条窄窄的线，谱架投下的影子慢慢爬到地板边缘。开吹之前，大家把谱架放到能看见同伴余光的位置，鞋尖离前排椅脚还有一点距离。走廊里还有下课的人经过，门一关，房间里的纸张声和呼吸声就变得格外清楚。</p>
+              <p>从照片看过去，靠前的同学正在吹旋律。她要在一句音乐结束前留出一点气，把最后几个音吹完，再给下一声部让出位置。后面的同学要读自己的谱，也要听她在哪里收音。有人会在容易进早的小节圈上一个拍子，抬头看领奏者的呼吸。这样的配合藏在排练的细节里，很难在静止的照片上直接看见。</p>
+              <p>同一张照片也做成了一段五秒钟的短片。画面从整个排练室缓缓靠近长笛和谱架，最后停在谱架边的窗光上，像排练结束后留下的一张照片。浏览时可以留意右侧的窗光、几个人坐的位置和笛管的方向。网页上的短片是一段基于图片制作的招新影像，呈现的是校园排练的想象场景。</p>
+              <p>排练最初的十分钟通常花在热身上。长音从每个人舒服的音区开始，吹两遍之后换到相邻的音。大家把音量压低一点，留意声音有没有随着呼吸变轻。一个声部试完，再请另一个声部叠上来，有时就能听见很清楚的和声。带练的人会请大家注意哪一条旋律最清楚，再决定谁多给一些空间。</p>
+              <p>有些排练难题用眼睛比用耳朵更容易发现。一起进入的地方，如果谱架挡住视线，几个人就看不到彼此抬笛的动作。两人合奏时如果坐得太远，即使旁听者觉得很整齐，演奏的人也可能听不见对方轻轻的伴奏。换个位置，调低谱架，或者让一名同学坐在房间后面听一遍，常常就能分清是节拍的问题还是场地的问题。</p>
+              <p>我们也喜欢记录排练里的小道具。贴在谱边的便利贴提醒演奏者在哪一页换气，写着日期的铅笔记号留着上一次排练定下的速度，一只随手放在窗边的节拍器帮助整组回到同一拍。乐器和道具跟着同学一起进出教室，每次都有一点变化。隔几周回头看，才会发现当初需要停三次的段落，现在已经可以一口气吹过去。</p>
+              <p>观看开放排练时，欢迎从教室边缘慢慢找一个舒服的位置。合奏进行中尽量让通道保持空着，等一段吹完后可以问刚才听到的是什么声部。要想体验持笛或者跟节拍试吹，等社员准备好器材后再参加。记下自己最喜欢的几个音，或者听见某个地方重复好几次的原因，都会让旁听变得更有意思。</p>
+              <p>在谱面上，休止符跟吹出来的音一样占时间。排练到安静的一小节时，大家仍在听前一句如何收尾，也仍在心里数拍。一旦有人把安静误当成停下，下一个音就会来得太晚。合奏好听的时候，有时是因为大家把那一点空白留得刚刚好。照片无法记录这样的间隔，但可以让人联想到每次吹奏前整间教室短暂的静默。</p>
+              <p>照片和短片把招新页与真实的练习方式接在一起。对某个动作好奇，可以在下次见面时请社员示范。对合奏有兴趣，也可以先试着分辨旋律和伴奏，再看活动介绍里的排练流程。等自己拿起长笛，或许会记起图片里那几张靠得很近的谱架，也会更愿意转过头听听身边人的声音。</p>
+            </div>
+        </details>
+        <p class="section-end"><a class="toplink" href="#top">返回顶部 ↑</a></p>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="story-title">
+      <div class="wrap">
+        <div class="story-grid">
+          <div>
+            <p class="eyebrow">04 / A Member’s Story</p>
+            <h2 class="section-title" id="story-title">社员故事</h2>
+            <p class="lead">第一次吹笛头，小周只听见了一点气声。她用了一个学期，终于在音乐会上和同伴吹完了自己最喜欢的那八小节。</p>
+          </div>
+          <p class="story-quote">“我记住的不是最后一个音，是我们吸气时对上的那个眼神。”<small>《第一次听见自己的长笛声》 · 虚构社员手记</small></p>
+        </div>
+        <details class="read">
+          <summary>阅读完整故事</summary>
+          <div class="article">
+              <p>小周第一次走进排练室，是为了把捡到的乐谱还给室友。她原以为把东西放下就能回宿舍，结果门刚推开，三个人正好吹完一个长音。最后一个声部慢了半拍，大家低头在谱上画圈，然后笑着从上一行重来。她坐到靠门的那张空椅子上，听了快半个小时。快散场时，带练的学姐问她要不要试试吹笛头，她把书包往脚边一推，说想试一下。</p>
+              <p>学姐先做了一次示范。小周学着把嘴唇贴到吹口边缘，悄悄吸了一口气，吹出来只有一声很轻的响动。她又试了几次，脸颊越来越紧，手也开始有点酸。学姐把笛头接过去，转过一点角度，再让她慢慢吹。这回教室里忽然响起一个短音。小周自己都没反应过来，马上再吹时又只剩气声。她在本子上写下日期，还画了一条表示气流方向的斜线。</p>
+              <p>之后每周去排练室，她先花几分钟把那个短音找回来。刚开始，最难的是不着急。旁边的同学已经在吹旋律，她还得把下巴放低一点，想想上回声音出现时是什么感觉。一次听课后她在教学楼门口等雨停，发现自己正盯着玻璃上缓慢下滑的水珠，在心里数一二三四。她给室友发消息，说今天第一次把长音吹到了第四拍。</p>
+              <p>能稳定发声以后，她想练最喜欢的那段旋律。前八小节有两个换气的地方，第二处藏在一个很短的音后面。她每次吹到这里都吸得太迟，下一小节便跟不上。室友把节拍器调慢，建议她先唱，不拿长笛，唱到换气的地方就用铅笔点一下。小周唱了一遍，发现原来可以在更早的地方留一个小空隙。第二天她照着那个位置吹，下一句终于接了上来。</p>
+              <p>四月排练时，小周坐到了靠里的一排。她吹第二声部，大部分时候需要等别人先开始。一紧张她就会盯住谱子，把别人吹的旋律丢在脑后。带练的学姐让她把第一小节放下，先听前面三个人吹完，再说自己应该在哪里进入。她听了三次，终于记住第一个声部向上走的那个音。后来只要听见这个音，她就知道自己该准备吸气。</p>
+              <p>在校内分享会前的最后一次排练里，小周有两个地方吹错了。她想从头来过，同伴指了指谱子，说先把错的那几拍吹好。四个人从那个小节前面一点开始，有人用手打拍，有人一边吹一边抬眼。第一遍音没接稳，第二遍已经齐了，第三遍大家在同一个地方放下长笛。小周在原先画叉的地方补上一个很小的圆。她回到寝室时，没再像往常那样把谱塞进抽屉，而是摊在桌上看了好一会儿。</p>
+              <p>音乐会那天，她坐在舞台边上，看见同学一边把节目单往后传，一边给晚到的人让座。轮到长笛小组，她把谱夹摆正，先望向同伴。两个人在吸气的时候对上眼神，第一句顺利进来。第二句换气时她仍然有点急，到了最后八小节，前排的声音带着她走下去。乐句结束，大家一起放下笛子。她记住的不是最后一个音，是他们吸气时对上的那个眼神。</p>
+              <p>学期末整理排练室，她在靠门的位置捡到一张折起来的练习纸，上面有人写着“今天只吹两拍”。她记得自己也写过差不多的话。后来有新同学站在门边问，零基础能不能学，她把那张靠门的椅子拉了出来。她没急着讲一学期要练什么，只问对方要不要先坐一会儿，听完这一段，再试试找自己的第一个音。</p>
+              <p>小周把本子留在谱架旁，用来给新同学看她从第一周到演出前的练习记录。记得最清楚的那页，写的还是一条斜线和一个日期。那天她从社团出来，在暮色里走过教学楼。窗边有几个人在练下一次活动的曲子，她听到他们从同一个小节又来了一遍，脚步不知不觉地放慢了。</p>
+            </div>
+        </details>
+        <p class="section-end"><a class="toplink" href="#top">返回顶部 ↑</a></p>
+      </div>
+    </section>
+
+    <section class="section alt" id="apply" aria-labelledby="apply-title">
+      <div class="wrap apply-layout">
+        <div>
+          <p class="eyebrow">05 / Join the Club</p>
+          <h2 class="section-title" id="apply-title">在线报名</h2>
+          <p class="lead">想试吹长笛、听一场合奏，或者找人一起练习？从填一份报名表开始。</p>
+          <details class="read">
+            <summary>阅读报名前须知</summary>
+            <div class="article">
+              <p>报名之前，可以先想想自己希望从长笛社获得怎样的体验。想听合奏的同学，第一次来可以安排旁听。想动手试试的同学，可以从笛头开始，观察气息和音色的变化。以前学过长笛、正在找伙伴合奏的同学，也可以带一段熟悉的谱子来。先选一个眼下最想尝试的方向，下次参加活动后再调整。</p>
+              <p>表单里的姓名和年级用于区分同组成员，出生日期则按年、月、日分开填写。网页是课程作业的报名演示，浏览时请使用虚构资料。输入示例姓名，选好一个年级，就可以试着提交并查看当前页面的确认提示。想从头再填时，点重置按钮会清空刚输入的内容。演示页面本身不会接收、保存或转发资料。</p>
+              <p>联系方式有手机和邮箱两个文本框。试填时可以使用示例号码与邮箱，例如填写一串虚构的数字并使用保留的示例域名。真实的社团活动通知应以学校或社团发布的正式渠道为准。参加正式活动前，确认通知里写明的时间、地点和联系人。如果参加的是开放排练，也可以提前问清当天的活动是否适合旁听。</p>
+              <p>长笛基础这一项用来了解从哪里开始练。没有吹过长笛、吹过别的乐器、以前吹过但已经很久没练，都是常见情况。还没拿过长笛的同学可以选择零基础。如果有过经验，可以在自我介绍里简单补充练习过多久、最近能稳定吹奏哪些音，或者想恢复哪方面的手感。这些具体信息能帮助带练同学准备合适的练习。</p>
+              <p>兴趣方向可以同时选择多项。喜欢基础练习的人可以从长音、指法和读谱着手。想参加小组重奏的人可以留意自己的节拍，练习在别人的旋律底下吹出清楚的伴奏。对舞台表演有兴趣的人，可以先从参加完整合排开始，慢慢熟悉上台时要做的准备。如果目前还没想好，第一次旁听后也许就会发现自己更喜欢哪一个部分。</p>
+              <p>自我介绍建议写三件事：什么时候开始对长笛感兴趣，接下来最想学什么，以及自己方便参加活动的时间。平时主要听音乐、从没学过任何乐器，也可以写下最喜欢的一段长笛旋律，或者记得在哪里第一次听到它。已经有演奏经验的话，提一提喜欢的小品和想尝试的声部，带练同学就能从一段你熟悉的音乐聊起。</p>
+              <p>活动安排涉及教室使用、合排时间和演出分工。参加小组排练前，可以先把课表与活动表对照一下，挑一个能连续参加几次的时间。遇到考试周或其他任务，要提前和同组伙伴沟通。不能到场时可以约时间补练，或者请同伴告诉自己这次定下了哪些速度和换气位置。演出前，队友也会据此分配声部和准备替补。</p>
+              <p>刚加入的同学可以提前准备纸笔，或在手机里记下一个想问的问题。带自用长笛时，先检查盒扣是否扣好，整理好自己的谱页和清洁用品。若参加现场体验，使用器材前听从教室里的安排，轮到自己时再拿取。零基础同学可以从观察开始，不需要为了第一次见面会事先背下指法，也不必在短时间里练会一整首曲子。</p>
+              <p>试填完成后，可以回活动安排看一眼见面会和基础公开课，找到两次活动共用的教室。再去风采展示打开介绍页，看看排练前后都有哪些步骤。报名表里的兴趣选项可以当作一次自我梳理。把想做的事写得具体一些，到了排练室，就更容易找到愿意一起试试的同学。</p>
+            </div>
+          </details>
+          <p class="section-end"><a class="toplink" href="#top">返回顶部 ↑</a></p>
+        </div>
+        <form class="form-box" id="signup" aria-label="长笛社在线报名表" aria-describedby="form-help">
+          <p id="form-help">课程演示表单。请使用示例信息试填，提交后可预览确认提示。</p>
+          <noscript><p>开启 JavaScript 后即可试填报名表。</p></noscript>
+          <fieldset id="signup-fields" disabled>
+            <table class="form-table" aria-label="报名字段">
+              <tbody>
+                <tr><th scope="row"><label for="name">姓名</label></th><td><input id="name" name="name" type="text" required placeholder="例如 小周"></td></tr>
+                <tr><th scope="row" id="gender-label">性别</th><td><div class="fields" role="group" aria-labelledby="gender-label">
+                  <label><input type="radio" name="gender" value="男"> 男</label>
+                  <label><input type="radio" name="gender" value="女"> 女</label>
+                  <label><input type="radio" name="gender" value="不便透露"> 不便透露</label>
+                </div></td></tr>
+                <tr><th scope="row" id="birth-label">出生日期</th><td><div class="fields date" role="group" aria-labelledby="birth-label">
+                  <label><input name="birth-year" type="text" aria-label="出生年份" inputmode="numeric" maxlength="4" placeholder="2007"> 年</label>
+                  <label><input name="birth-month" type="text" aria-label="出生月份" inputmode="numeric" maxlength="2" placeholder="03"> 月</label>
+                  <label><input name="birth-day" type="text" aria-label="出生日期中的日" inputmode="numeric" maxlength="2" placeholder="15"> 日</label>
+                </div></td></tr>
+                <tr><th scope="row">手机 / 邮箱</th><td><div class="contacts">
+                  <input name="phone" type="text" aria-label="手机号码" inputmode="tel" placeholder="手机号">
+                  <input name="email" type="text" aria-label="邮箱地址" inputmode="email" placeholder="邮箱地址">
+                </div></td></tr>
+                <tr><th scope="row" id="experience-label">长笛基础</th><td><div class="fields" role="group" aria-labelledby="experience-label">
+                  <label><input type="radio" name="experience" value="有"> 有基础</label>
+                  <label><input type="radio" name="experience" value="无"> 零基础</label>
+                </div></td></tr>
+                <tr><th scope="row" id="interest-label">兴趣方向</th><td><div class="fields" role="group" aria-labelledby="interest-label">
+                  <label><input type="checkbox" name="interest" value="基础练习"> 基础练习</label>
+                  <label><input type="checkbox" name="interest" value="小组重奏"> 小组重奏</label>
+                  <label><input type="checkbox" name="interest" value="舞台表演"> 舞台表演</label>
+                </div></td></tr>
+                <tr><th scope="row"><label for="grade">年级</label></th><td>
+                  <select id="grade" name="grade" required>
+                    <option value="">请选择年级</option>
+                    <option>大一</option><option>大二</option><option>大三</option><option>大四</option><option>研究生</option>
+                  </select>
+                </td></tr>
+                <tr><th scope="row"><label for="message">自我介绍</label></th><td>
+                  <textarea id="message" name="message" rows="4" placeholder="请简单介绍自己、以及加入长笛社的理由……"></textarea>
+                </td></tr>
+                <tr><th scope="row" id="attend-label">是否服从活动安排</th><td><div class="fields" role="group" aria-labelledby="attend-label">
+                  <label><input type="radio" name="attend" value="是"> 是</label>
+                  <label><input type="radio" name="attend" value="否"> 否</label>
+                </div></td></tr>
+                <tr><td colspan="2"><div class="fields">
+                  <input class="btn btn-dark" type="submit" value="提交报名">
+                  <input class="btn btn-light" type="reset" value="重置表单">
+                </div></td></tr>
+              </tbody>
+            </table>
+          </fieldset>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap">
+    <span>长笛社 <span aria-hidden="true">✦</span> 2026 春季招新</span>
+    <span class="mono">FLUTE CLUB / WEB COURSE PROJECT</span>
+    <a class="toplink" href="#top">返回顶部 ↑</a>
+  </div></footer>
+
+  <script>
+    const music = document.querySelector('#theme-music');
+    const musicToggle = document.querySelector('#music-toggle');
+    const musicIcon = document.querySelector('#music-icon');
+    const musicLabel = document.querySelector('#music-label');
+    musicToggle.hidden = false;
+
+    function updateMusicButton() {
+      const playing = !music.paused;
+      musicToggle.setAttribute('aria-pressed', String(playing));
+      musicIcon.textContent = playing ? 'Ⅱ' : '▶';
+      musicLabel.textContent = playing ? '暂停主题曲' : '播放主题曲';
+    }
+
+    musicToggle.addEventListener('click', async () => {
+      if (!music.paused) {
+        music.pause();
+        return;
+      }
+      try {
+        await music.play();
+      } catch {
+        musicLabel.textContent = '播放失败 · 点击重试';
+      }
+    });
+    music.addEventListener('play', updateMusicButton);
+    music.addEventListener('pause', updateMusicButton);
+
+    const form = document.querySelector('#signup');
+    const status = document.querySelector('#form-status');
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const name = form.elements.namedItem('name').value.trim();
+      if (!name) {
+        const nameField = form.elements.namedItem('name');
+        nameField.value = '';
+        nameField.reportValidity();
+        return;
+      }
+      status.textContent = name + '，你的报名表已通过演示检查。此操作仅在当前页面预览，信息未上传。';
+    });
+    form.addEventListener('reset', () => {
+      status.textContent = '';
+    });
+    document.querySelector('#signup-fields').disabled = false;
+  </script>
+</body>
+</html>
